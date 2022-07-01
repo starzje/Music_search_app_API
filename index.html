@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Search App</title>
+    <!-- javascript -->
+    <script src="./script.js" defer></script>
+    <!-- favicon -->
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAABfX18AaGhoAPv7+wBxcXEApaWlAOvr6wBhYWEAycnJAGpqagD9/f0Ac3NzAGNjYwBsbGwA////ANTU1AB1dXUAqampAGVlZQDNzc0Abm5uAHd3dwBVVVUAXl5eAGdnZwCbm5sAcHBwAK2trQC2trYAYGBgAGlpaQD8/PwAcnJyAEdHRwCEhIQAYmJiAGtrawD+/v4AdHR0ALGxsQCGhoYAurq6AO7u7gBkZGQAw8PDAG1tbQBUVFQAXV1dAMXFxQBmZmYAmpqaANfX1wCsrKwAioqKAOnp6QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQ0NDQ0NDQ0NDQ0NDQ0NJA0NDQ0NDQkNDQ0NDQ0NDQ0NDQ0NDRInLzIxIQIkDQ0NDQ0NDQ4AHCIuBgYAHg0NDQ0NDQIVKiIqIiIiHDQkDQ0kDQ0rIgsRMDAXETAWJA0NDQ0NDxcBAR0IHQgdDQ0NCQ0JDRQwLCMjLBMsMw0NDQ0NCQ0KHQMKLBkfLBANDQ0NDQ0NBAAKJQoPJR8fDQ0NDQ0NDQkgLjAwFzAMCBoNDQ0NDQ0NJAcoDRsYGjUNJA0NDQ0NDQ0NDQ0tCg0kDQ0NDQ0NDQ0NDQ0NKREmDQ0NDQ0NDQ0NDQ0NDQ0NBQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      rel="icon"
+      type="image/x-icon"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontovi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ikone -->
+    <script
+      src="https://kit.fontawesome.com/adf56416fe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Search Music</h1>
+      <h4>
+        Search our library to find information about your favorit artist or
+        track
+      </h4>
+      <form>
+        <input
+          id="input"
+          type="text"
+          onfocus="this.value=''"
+          placeholder="Song or artist name"
+        />
+        <button id="button">Search</button>
+      </form>
+    </header>
+    <div class="container">
+      <div id="results"></div>
+      <!-- Spinner za loadanje -->
+      <div id="spinner" class="deactivated">
+        <div class="lds-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
